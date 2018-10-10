@@ -7,7 +7,7 @@ for(let i = 0;i < dishes.length; i++) {
 
   let menuItem = `
   <li class="listItem">
-    <img src="${dish.imageURL}" />
+    <img class="pictures" src="${dish.imageURL}" />
     <div>
       <label><u>${dish.title}</u></label>
       <p>${dish.description}</p>

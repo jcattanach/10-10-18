@@ -1,3 +1,15 @@
+@media (min-width: 320px) and (max-width: 480px) {
+
+.listItem {
+  flex-direction: column;
+}
+#price {
+  align-self: center;
+  margin-bottom: 10%;
+}
+}
+
+
 body {
   background-color: #EDCDB0;
 }
