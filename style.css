@@ -1,6 +1,9 @@
 body {
   background-color: #EDCDB0;
 }
+h1 {
+  font-size: 40px;
+}
 
 #container {
   display: flex;
@@ -8,9 +11,11 @@ body {
   align-items: center;
 }
 
-#menuList {
-  margin-top: 5%;
+ul {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
 .listItem {
   list-style: none;
   display: flex;

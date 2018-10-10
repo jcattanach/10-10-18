@@ -1,4 +1,6 @@
-let menuList = document.getElementById("menuList")
+let starterList = document.getElementById("starterList")
+let entreeList = document.getElementById("entreeList")
+let dessertList = document.getElementById("dessertList")
 
 for(let i = 0;i < dishes.length; i++) {
   let dish = dishes[i]
@@ -11,8 +13,13 @@ for(let i = 0;i < dishes.length; i++) {
       <p>${dish.description}</p>
     </div>
     <label id="price">${dish.price}</label>
-  </li>
-  `
-
-  menuList.insertAdjacentHTML('beforeend', menuItem)
+  </li>`
+  
+  if(dish.course == "Starters") {
+    starterList.insertAdjacentHTML('beforeend', menuItem)
+  } else if(dish.course == "Entrees"){
+    entreeList.insertAdjacentHTML('beforeend', menuItem)
+  } else if(dish.course == "Desserts"){
+    dessertList.insertAdjacentHTML('beforeend', menuItem)
+  }
 }
